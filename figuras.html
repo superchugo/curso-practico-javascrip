@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras Geométricas</title>
+    <link href="./styles/style.css" rel="stylesheet" type="text/css">
+      
+</head>
+<body>
+    <header class="contenedor">
+        <div class="title">
+            <img src="./imagenes/images.jpg" class="logo"/>
+            <h1> Figuras Geométricas</h1>
+        </div>
+            <p>Este es el primer Taller del Curso Práctico de JavaScript</p>
+    </header>
+
+    <div class="figurasContainer">
+            <section class="cuadrado">
+                <div class="cabeceras">
+                    <img src="./imagenes/cuadrado.png" alt="Cuadrado"/>
+                <h2>Calcula el área y perímetro de un cuadrado</h2>
+                </div>
+                
+                <form class="formularioCuadrado">
+                    <label for="inputCuadrado">Medida del lado del cuadrado</label>
+                    <input id="inputCuadrado"  type="number"/>
+                    <div class="areaButton">
+                        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular Perímetro </button>
+                        <button type="button" onclick="calcularAreaCuadrado()">Calcular Area </button>
+                    </div>
+                    <div class="areaResultado">
+                        <label id="resultadoCuadrado"> </label>
+                    </div>
+                </form>
+            </section>
+            
+            <section class="circulo">
+                <div class="cabeceras">
+                    <img src="./imagenes/circulo.png" alt="Circulo"/>
+                    <h2>Calcula el área y perímetro de un Círculo</h2>
+                </div>
+                <form class="formularioCirculo">
+                    <label for="inputCirculoRadio">Medida del radio del Circulo</label>
+                    <input id="inputCirculoRadio"  type="number"/>
+                    <div class="areaButton">
+                        <button type="button" onclick="calcularPerimetroCirculo()">Calcular Perímetro </button>
+                        <button type="button" onclick="calcularAreaCirculo()">Calcular Area </button>
+                    </div>
+                    <div class="areaResultado">
+                        <label id="resultadoCirculo"> </label>
+                    </div>
+                </form>
+            </section>
+        
+            <section class="triangulo">
+                <div class="cabeceras">
+                    <img src="./imagenes/triangulo.png" alt="Triángulo"/>    
+                    <h2>Calcula el área y perímetro de un Triángulo</h2>
+                </div>    
+                <form class="formularioTriangulo">
+                    <div class="datos">
+                        <label for="inputTrianguloLadoA">Medida lado A del Tríangulo</label>
+                        <input id="inputTrianguloLadoA"  type="number"/>
+                        <label for="inputTrianguloLadoB">Medida lado B del Triángulo</label>
+                        <input id="inputTrianguloLadoB"  type="number"/>
+                        <label for="inputTrianguloBase">Medida de la Base del Triángulo</label>
+                        <input id="inputTrianguloBase"  type="number"/>
+                        <label for="inputTrianguloAltura">Medida de la altura del Triángulo</label>
+                        <input id="inputTrianguloAltura"  type="number"/>
+                    </div>    
+                    <div class="areaButton">
+                        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular Perímetro </button>
+                        <button type="button" onclick="calcularAreaTriangulo()">Calcular Area </button>
+                    </div>
+                    <div class="areaResultado">
+                        <label id="resultadoTriangulo"> </label>
+                    </div>
+                </form> 
+            </section>
+
+    </div>
+    <script src="./figuras.js"></script>
+</body>
+</html>
